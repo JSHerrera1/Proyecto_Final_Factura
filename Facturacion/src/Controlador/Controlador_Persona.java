@@ -21,7 +21,7 @@ public class Controlador_Persona {
     //Metodo que no retorna ningun valor
     //Escribir en el archivo
     //Crea un objeto
-    public void registarCliente(Cliente cliente) throws IOException {
+    public void registrarCliente(Cliente cliente) throws IOException {
         archivo = new File(ruta);//Crear el archivo  
         try (FileWriter TextOut = new FileWriter(archivo, true)) { //Manejo de ecepcion para crear el archivo
             TextOut.write(String.valueOf(cliente.getId() + "*" + cliente.getNombre()

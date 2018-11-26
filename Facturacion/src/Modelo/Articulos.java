@@ -122,5 +122,10 @@ public class Articulos {
     public void setDisponivilidadProducto(boolean disponivilidadProducto) {
         this.disponivilidadProducto = disponivilidadProducto;
     }
+
+    @Override
+    public String toString() {
+        return "Articulos{" + "proveedor=" + proveedor + ", codigoProducto=" + codigoProducto + ", precioOriginal=" + precioOriginal + ", pvp=" + pvp + ", caracteristicasProducto=" + caracteristicasProducto + ", cantDisParaVenta=" + cantDisParaVenta + ", cantVendidaProducto=" + cantVendidaProducto + ", tipoDeProducto=" + tipoDeProducto + ", disponivilidadProducto=" + disponivilidadProducto + '}';
+    }
     
 }

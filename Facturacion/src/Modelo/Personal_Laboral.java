@@ -45,6 +45,15 @@ public class Personal_Laboral extends Persona{
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+
+    @Override
+    public String toString() {
+        String linea = ("\nPersona = {"+"Nombre: "+nombre +" - Apellido: "+ 
+                apellido +" -fechaNacimiento: "+ fechaNacimiento +
+                "\n - idCliente: "+ id +" - numeroTelefono: "+ numTelf  +
+                " - direccion: "+ direccion +" - ciudad: "+ ciudad);
+        return "Personal_Laboral{" + "usuario=" + usuario + ", contrase\u00f1a=" + contraseña + '}'+linea;
+    }
     
     
     

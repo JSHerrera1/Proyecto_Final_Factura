@@ -6,13 +6,13 @@ import java.util.Date; //paquete de la libreria date
  * @author Jhon
  */
 public class Persona {
-    private String nombre;
-    private String apellido;
-    private Date fechaNacimiento;
-    private String id;
-    private String numTelf;
-    private String direccion;
-    private String ciudad;
+    protected String nombre;
+    protected String apellido;
+    protected Date fechaNacimiento;
+    protected String id;
+    protected String numTelf;
+    protected String direccion;
+    protected String ciudad;
 
     //Constructor vacio para adptarlo
     public Persona() {
@@ -87,6 +87,11 @@ public class Persona {
 
     public void setCiudad(String ciudad) {
         this.ciudad = ciudad;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento=" + fechaNacimiento + ", id=" + id + ", numTelf=" + numTelf + ", direccion=" + direccion + ", ciudad=" + ciudad + '}';
     }
     
     

@@ -9,8 +9,6 @@ public class Factura {
 
     Cliente comprador; //composiscion de uno a muchos
     Personal_Laboral empleados; //composiscion de uno a muchos
-    private String idComprador;
-    private String nomEmpleado;
     private Date fechaCompra;
     private String codigoFactura;
     
@@ -18,29 +16,25 @@ public class Factura {
 
     public Factura() {
     }
+
+
     
     //Constructor unico que contiene los atributos de la clase
 
-    public Factura(String idComprador, String nomEmpleado, Date fechaCompra, String codigoFactura) {
-        this.idComprador = idComprador;
-        this.nomEmpleado = nomEmpleado;
+    public Factura(Date fechaCompra, String codigoFactura) {
         this.fechaCompra = fechaCompra;
         this.codigoFactura = codigoFactura;
     }
-    
-    //cosntructor que contiene los atributos de la clase y el de la composicion
 
-    public Factura(Cliente comprador, Personal_Laboral empleados, String idComprador, String nomEmpleado, Date fechaCompra, String codigoFactura) {
+    //cosntructor que contiene los atributos de la clase y el de la composicion
+    public Factura(Cliente comprador, Personal_Laboral empleados, Date fechaCompra, String codigoFactura) {    
         this.comprador = comprador;
         this.empleados = empleados;
-        this.idComprador = idComprador;
-        this.nomEmpleado = nomEmpleado;
         this.fechaCompra = fechaCompra;
         this.codigoFactura = codigoFactura;
     }
-    
-    //Metodos get
 
+    //Metodos get
     public Cliente getComprador() {
         return comprador;
     }
@@ -49,13 +43,6 @@ public class Factura {
         return empleados;
     }
 
-    public String getIdComprador() {
-        return idComprador;
-    }
-
-    public String getNomEmpleado() {
-        return nomEmpleado;
-    }
 
     public Date getFechaCompra() {
         return fechaCompra;
@@ -75,14 +62,7 @@ public class Factura {
         this.empleados = empleados;
     }
 
-    public void setIdComprador(String idComprador) {
-        this.idComprador = idComprador;
-    }
-
-    public void setNomEmpleado(String nomEmpleado) {
-        this.nomEmpleado = nomEmpleado;
-    }
-
+   
     public void setFechaCompra(Date fechaCompra) {
         this.fechaCompra = fechaCompra;
     }
@@ -90,6 +70,12 @@ public class Factura {
     public void setCodigoFactura(String codigoFactura) {
         this.codigoFactura = codigoFactura;
     }
+
+    @Override
+    public String toString() {
+        return "Factura{" + "comprador=" + comprador + ", empleados=" + empleados + ", fechaCompra=" + fechaCompra + ", codigoFactura=" + codigoFactura + '}';
+    }
+    
     
 
 }
