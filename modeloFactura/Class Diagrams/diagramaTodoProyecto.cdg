@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="facturacion">
+  <ClassDiagramComponents>
+    <Class name="Personal_laboral" package="Controlador" visibility="public" xPosition="727.0" yPosition="605.0">
+      <Fields>
+        <Field name="usuario" type="String" visibility="protected"/>
+        <Field name="contrasena" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="usuario"/>
+          <Argument type="String" name="contrasena"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="usuario"/>
+          <Argument type="String" name="contrasena"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="ci"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="Date" name="fechaNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getUsuario" returnType="String" visibility="public"/>
+        <Method name="setUsuario" returnType="void" visibility="public">
+          <Argument type="String" name="usuario"/>
+        </Method>
+        <Method name="getContrasena" returnType="String" visibility="public"/>
+        <Method name="setContrasena" returnType="void" visibility="public">
+          <Argument type="String" name="contrasena"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Detalle_factura" package="Controlador" visibility="public" xPosition="1857.0" yPosition="1569.0">
+      <Fields>
+        <Field name="articulos" type="ArrayList&lt;Articulos&gt;" visibility="package"/>
+        <Field name="cantidad" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Articulos&gt;" name="articulo"/>
+          <Argument type="int" name="cantidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArticulos" returnType="ArrayList&lt;Articulos&gt;" visibility="public"/>
+        <Method name="setArticulos" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Articulos&gt;" name="articulos"/>
+        </Method>
+        <Method name="getCantidad" returnType="int" visibility="public"/>
+        <Method name="setCantidad" returnType="void" visibility="public">
+          <Argument type="int" name="cantidad"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Articulos" package="Controlador" visibility="public" xPosition="1741.0" yPosition="1019.0">
+      <Fields>
+        <Field name="codigoArticulo" type="String" visibility="public"/>
+        <Field name="precioOriginal" type="double" visibility="protected"/>
+        <Field name="precioVenta" type="double" visibility="protected"/>
+        <Field name="descripcion" type="String" visibility="protected"/>
+        <Field name="existencia" type="int" visibility="protected"/>
+        <Field name="estado" type="boolean" visibility="protected"/>
+        <Field name="tipo" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigoArticulo"/>
+          <Argument type="double" name="precioOriginal"/>
+          <Argument type="double" name="precioVenta"/>
+          <Argument type="String" name="descripcion"/>
+          <Argument type="int" name="existencia"/>
+          <Argument type="boolean" name="estado"/>
+          <Argument type="String" name="tipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigoArticulo" returnType="String" visibility="public"/>
+        <Method name="setCodigoArticulo" returnType="void" visibility="public">
+          <Argument type="String" name="codigoArticulo"/>
+        </Method>
+        <Method name="getPrecioOriginal" returnType="double" visibility="public"/>
+        <Method name="setPrecioOriginal" returnType="void" visibility="public">
+          <Argument type="double" name="precioOriginal"/>
+        </Method>
+        <Method name="getPrecioVenta" returnType="double" visibility="public"/>
+        <Method name="setPrecioVenta" returnType="void" visibility="public">
+          <Argument type="double" name="precioVenta"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getExistencia" returnType="int" visibility="public"/>
+        <Method name="setExistencia" returnType="void" visibility="public">
+          <Argument type="int" name="existencia"/>
+        </Method>
+        <Method name="isEstado" returnType="boolean" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="boolean" name="estado"/>
+        </Method>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Proveedor" package="Controlador" visibility="public" xPosition="1708.0" yPosition="605.0">
+      <Fields>
+        <Field name="articulo" type="ArrayList&lt;Articulos&gt;" visibility="package"/>
+        <Field name="nombreEmpresa" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Articulos&gt;" name="articulos"/>
+          <Argument type="String" name="nombreEmpresa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Articulos&gt;" name="articulos"/>
+          <Argument type="String" name="nombreEmpresa"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="ci"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="Date" name="fechaNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArticulo" returnType="ArrayList&lt;Articulos&gt;" visibility="public"/>
+        <Method name="setArticulo" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Articulos&gt;" name="articulo"/>
+        </Method>
+        <Method name="getNombreEmpresa" returnType="String" visibility="public"/>
+        <Method name="setNombreEmpresa" returnType="void" visibility="public">
+          <Argument type="String" name="nombreEmpresa"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Factura" package="Controlador" visibility="public" xPosition="590.0" yPosition="1019.0">
+      <Fields>
+        <Field name="codigoFactura" type="String" visibility="private"/>
+        <Field name="fechaCompra" type="Date" visibility="private"/>
+        <Field name="estadoFactura" type="boolean" visibility="private"/>
+        <Field name="detalleFactura" type="ArrayList&lt;Detalle_factura&gt;" visibility="package"/>
+        <Field name="cliente" type="Cliente" visibility="package"/>
+        <Field name="personal_laboral" type="Personal_laboral" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigoFactura"/>
+          <Argument type="Date" name="fechaCompra"/>
+          <Argument type="boolean" name="estadoFactura"/>
+          <Argument type="ArrayList&lt;Detalle_factura&gt;" name="detalleFactura"/>
+          <Argument type="Cliente" name="clientes"/>
+          <Argument type="Personal_laboral" name="personal_laborals"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigoFactura" returnType="String" visibility="public"/>
+        <Method name="setCodigoFactura" returnType="void" visibility="public">
+          <Argument type="String" name="codigoFactura"/>
+        </Method>
+        <Method name="getFechaCompra" returnType="Date" visibility="public"/>
+        <Method name="setFechaCompra" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaCompra"/>
+        </Method>
+        <Method name="isEstadoFactura" returnType="boolean" visibility="public"/>
+        <Method name="setEstadoFactura" returnType="void" visibility="public">
+          <Argument type="boolean" name="estadoFactura"/>
+        </Method>
+        <Method name="getDetalleFactura" returnType="ArrayList&lt;Detalle_factura&gt;" visibility="public"/>
+        <Method name="setDetalleFactura" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Detalle_factura&gt;" name="detalleFactura"/>
+        </Method>
+        <Method name="getCliente" returnType="Cliente" visibility="public"/>
+        <Method name="setCliente" returnType="void" visibility="public">
+          <Argument type="Cliente" name="cliente"/>
+        </Method>
+        <Method name="getPersonal_laboral" returnType="Personal_laboral" visibility="public"/>
+        <Method name="setPersonal_laboral" returnType="void" visibility="public">
+          <Argument type="Personal_laboral" name="personal_laboral"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="Controlador" visibility="public" xPosition="6.0" yPosition="605.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="ci"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="Date" name="fechaNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="Controlador" visibility="public" xPosition="969.0" yPosition="8.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="apellido" type="String" visibility="protected"/>
+        <Field name="ci" type="String" visibility="protected"/>
+        <Field name="direccion" type="String" visibility="protected"/>
+        <Field name="telefono" type="String" visibility="protected"/>
+        <Field name="ciudad" type="String" visibility="protected"/>
+        <Field name="fechaNacimiento" type="Date" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="ci"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="String" name="telefono"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="Date" name="fechaNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getCi" returnType="String" visibility="public"/>
+        <Method name="setCi" returnType="void" visibility="public">
+          <Argument type="String" name="ci"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="direccion"/>
+        </Method>
+        <Method name="getTelefono" returnType="String" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="getCiudad" returnType="String" visibility="public"/>
+        <Method name="setCiudad" returnType="void" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getFechaNacimiento" returnType="Date" visibility="public"/>
+        <Method name="setFechaNacimiento" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaNacimiento"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Facturacion" package="facturacion" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Modelo_Persona" package="Modelo" visibility="public" xPosition="98.0" yPosition="1019.0">
+      <Fields>
+        <Field name="ruta" type="String" visibility="package"/>
+        <Field name="archivo" type="File" visibility="package"/>
+        <Field name="leerArchivo" type="FileReader" visibility="package"/>
+        <Field name="escribir" type="BufferedReader" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="registrarCliente" returnType="void" visibility="public">
+          <Argument type="Cliente" name="cliente"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="detalleFactura" source="Controlador.Factura" target="Controlador.Detalle_factura" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Detalle_factura&gt;"/>
+    <HasRelation name="articulo" source="Controlador.Proveedor" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Articulos&gt;"/>
+    <HasRelation name="articulos" source="Controlador.Detalle_factura" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Articulos&gt;"/>
+    <IsRelation name="is" source="Controlador.Cliente" target="Controlador.Persona"/>
+    <UseRelation source="Controlador.Factura" target="Controlador.Detalle_factura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controlador.Proveedor" target="Controlador.Articulos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cliente" source="Controlador.Factura" target="Controlador.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controlador.Factura" target="Controlador.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Controlador.Personal_laboral" target="Controlador.Persona"/>
+    <UseRelation source="Controlador.Detalle_factura" target="Controlador.Articulos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="personal_laboral" source="Controlador.Factura" target="Controlador.Personal_laboral" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Modelo.Modelo_Persona" target="Controlador.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Controlador.Proveedor" target="Controlador.Persona"/>
+    <UseRelation source="Controlador.Factura" target="Controlador.Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

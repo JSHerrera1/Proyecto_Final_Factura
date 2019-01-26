@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="diagramaClases">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="235.0" yPosition="17.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="apellido" type="String" visibility="protected"/>
+        <Field name="ci" type="String" visibility="protected"/>
+        <Field name="direccion" type="String" visibility="protected"/>
+        <Field name="telefono" type="String" visibility="protected"/>
+        <Field name="ciudad" type="String" visibility="protected"/>
+        <Field name="fechaNacimiento" type="Date" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="42.0" yPosition="251.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Proveedor" package="" visibility="public" xPosition="433.0" yPosition="251.0">
+      <Fields>
+        <Field name="nombreEmpresa" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Personal_laboral" package="" visibility="public" xPosition="239.0" yPosition="251.0">
+      <Fields>
+        <Field name="usuario" type="String" visibility="protected"/>
+        <Field name="contrasena" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Articulos" package="" visibility="public" xPosition="397.0" yPosition="414.0">
+      <Fields>
+        <Field name="arrProveedor" type="ArrayList&lt;Proveedor&gt;" visibility="public"/>
+        <Field name="codigoArticulo" type="String" visibility="public"/>
+        <Field name="precioOriginal" type="double" visibility="protected"/>
+        <Field name="precioVenta" type="double" visibility="protected"/>
+        <Field name="descripcion" type="String" visibility="protected"/>
+        <Field name="existencia" type="int" visibility="protected"/>
+        <Field name="estado" type="boolean" visibility="protected"/>
+        <Field name="tipo" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Detalle_factura" package="" visibility="public" xPosition="309.0" yPosition="696.0">
+      <Fields>
+        <Field name="codigoFacturadf" type="String" visibility="private"/>
+        <Field name="codigoArticulodf" type="String" visibility="private"/>
+        <Field name="cantidad" type="int" visibility="private"/>
+        <Field name="IVA" type="double" visibility="private"/>
+        <Field name="precioVenta" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Factura" package="" visibility="public" xPosition="100.0" yPosition="456.0">
+      <Fields>
+        <Field name="codigoFactura" type="String" visibility="private"/>
+        <Field name="codigoCliente" type="String" visibility="private"/>
+        <Field name="codigoPersonal" type="String" visibility="private"/>
+        <Field name="fechaCompra" type="Date" visibility="private"/>
+        <Field name="estadoFactura" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="proveedorArticulo" source="Proveedor" target="Articulos" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Cliente" target="Persona"/>
+    <IsRelation name="is" source="Proveedor" target="Persona"/>
+    <HasRelation name="clienteFactura" source="Factura" target="Cliente" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <HasRelation name="artivuloDetalle" source="Detalle_factura" target="Articulos" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Personal_laboral" target="Persona"/>
+    <HasRelation name="personalFactura" source="Factura" target="Personal_laboral" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <HasRelation name="facturaDetalle" source="Factura" target="Detalle_factura" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
