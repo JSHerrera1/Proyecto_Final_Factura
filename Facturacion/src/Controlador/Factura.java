@@ -9,8 +9,8 @@ public class Factura {
 
     private Date fechaCompra;
 
-    private String estadoFactura;
-    ArrayList<Detalle_factura> detalleFactura; //DETALLE DE COMPRA
+    private boolean estadoFactura;
+    ArrayList<Detalle_factura> detalleFactura;
     Cliente cliente;
     double subtotal;
     double total;
@@ -20,7 +20,7 @@ public class Factura {
     }
 
     public Factura(String codigoFactura, Date fechaCompra, 
-           String estadoFactura, ArrayList<Detalle_factura> detalleFactura, 
+            boolean estadoFactura, ArrayList<Detalle_factura> detalleFactura, 
             Cliente cliente, double subtotal, double total, 
             Personal_laboral personal_laboral) {
         this.codigoFactura = codigoFactura;
@@ -49,11 +49,11 @@ public class Factura {
         this.fechaCompra = fechaCompra;
     }
 
-    public String isEstadoFactura() {
+    public boolean isEstadoFactura() {
         return estadoFactura;
     }
 
-    public void setEstadoFactura(String estadoFactura) {
+    public void setEstadoFactura(boolean estadoFactura) {
         this.estadoFactura = estadoFactura;
     }
 

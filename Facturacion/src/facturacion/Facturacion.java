@@ -3,7 +3,6 @@ package facturacion;
 import Controlador.Articulos;
 import Controlador.Cliente;
 import Controlador.Detalle_factura;
-import Controlador.Factura;
 import Controlador.Personal_laboral;
 import Controlador.Proveedor;
 import java.text.DateFormat;
@@ -32,8 +31,8 @@ public class Facturacion {
         System.out.println("\n" + p.toString());
 
         Articulos a = new Articulos("art123", 12.50, 14.00, "leche en polvo",
-                20, "existe", "jabon");
-        Articulos a1 = new Articulos("art12", 5.00, 6.00, "pañal", 10, "existe", "bebe");
+                20, true, "jabon");
+        Articulos a1 = new Articulos("art12", 5.00, 6.00, "pañal", 10, true, "bebe");
         ArrayList<Articulos> articulos = new ArrayList<>();
         articulos.add(a);
         articulos.add(a1);
@@ -45,17 +44,18 @@ public class Facturacion {
         System.out.println(proveedor.toString());
 
 //***** Creacion del detalle de compra del cliente
-        ArrayList<Detalle_factura>  al = new ArrayList<>();
-        Detalle_factura d1 = new Detalle_factura(a, 1);
-        Detalle_factura d2 = new Detalle_factura(a1, 20);
-        al.add(d2);
-        al.add(d1);
-        System.out.println(al.toString());
+        ArrayList<Articulos> articuloses = new ArrayList<>();
+        articuloses.add(a);
+
+        Detalle_factura detalle_factura = new Detalle_factura(articuloses, 2);
+        ArrayList<Detalle_factura> detalle_facturas = new ArrayList<>();
+        detalle_facturas.add(detalle_factura);
+        System.out.println(detalle_facturas.toString());
 
         java.util.Date fecha = new Date();
-        Factura factura = new Factura("FACT123", fecha, "bien",
-                al, c,12.1,12.2, p);
-        System.out.println(factura.toString());
+        /*Factura factura = new Factura("FACT123", fecha, true,
+                detalle_facturas, c, p);
+        System.out.println(factura.toString());*/
 
     }
 

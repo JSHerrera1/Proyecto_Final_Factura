@@ -61,7 +61,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Articulos" package="Controlador" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Articulos" package="Controlador" visibility="public" xPosition="644.0" yPosition="395.0">
       <Fields>
         <Field name="codigoArticulo" type="String" visibility="public"/>
         <Field name="precioOriginal" type="double" visibility="protected"/>
@@ -304,7 +304,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Modelo_proveedor" package="Modelo" visibility="public" xPosition="320.0" yPosition="420.0">
+    <Class name="Modelo_proveedor" package="Modelo" visibility="public" xPosition="296.0" yPosition="395.0">
       <Fields>
         <Field name="archivoR" type="String" visibility="package"/>
         <Field name="TextFile" type="File" visibility="package"/>
@@ -333,7 +333,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Modelo_articulo" package="Modelo" visibility="public" xPosition="620.0" yPosition="420.0">
+    <Class name="Modelo_articulo" package="Modelo" visibility="public" xPosition="349.0" yPosition="836.0">
       <Fields>
         <Field name="archivoR" type="String" visibility="package"/>
         <Field name="TextFile" type="File" visibility="package"/>
@@ -359,7 +359,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Modelo_cliente" package="Modelo" visibility="public" xPosition="920.0" yPosition="420.0">
+    <Class name="Modelo_cliente" package="Modelo" visibility="public" xPosition="1419.0" yPosition="755.0">
       <Fields>
         <Field name="archivoR" type="String" visibility="package"/>
         <Field name="TextFile" type="File" visibility="package"/>
@@ -385,7 +385,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Modelo_personal" package="Modelo" visibility="public" xPosition="1220.0" yPosition="420.0">
+    <Class name="Modelo_personal" package="Modelo" visibility="public" xPosition="1761.0" yPosition="651.0">
       <Fields>
         <Field name="archivoR" type="String" visibility="package"/>
         <Field name="TextFile" type="File" visibility="package"/>
@@ -411,7 +411,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Registro_producto" package="Vista" visibility="public" xPosition="1520.0" yPosition="420.0">
+    <Class name="Registro_producto" package="Vista" visibility="public" xPosition="1891.0" yPosition="817.0">
       <Fields>
         <Field name="codArticulo" type="String" visibility="package"/>
         <Field name="precioOriginal" type="double" visibility="package"/>
@@ -450,8 +450,7 @@
         <Method name="cabecera" returnType="void" visibility="public"/>
         <Method name="llenarTabla" returnType="void" visibility="package"/>
         <Method name="limpiarTabla" returnType="void" visibility="private"/>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="btRegistrarActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -460,7 +459,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="Registro_cliente" package="Vista" visibility="public" isFinal="true" xPosition="1820.0" yPosition="420.0">
+    <Class name="Registro_cliente" package="Vista" visibility="public" isFinal="true" xPosition="2563.0" yPosition="-17.0">
       <Fields>
         <Field name="c" type="Cliente" visibility="package"/>
         <Field name="m" type="Modelo_cliente" visibility="package"/>
@@ -499,8 +498,7 @@ void" visibility="private"/>
         <Method name="cabeceras" returnType="void" visibility="public"/>
         <Method name="llenarTabla" returnType="void" visibility="package"/>
         <Method name="limpiarTabla" returnType="void" visibility="private"/>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="txtCedulaActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -518,7 +516,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="Registrar_proveedor" package="Vista" visibility="public" isFinal="true" xPosition="2120.0" yPosition="420.0">
+    <Class name="Registrar_proveedor" package="Vista" visibility="public" isFinal="true" xPosition="2563.0" yPosition="836.0">
       <Fields>
         <Field name="nombreEmpresa" type="String" visibility="package"/>
         <Field name="cedula" type="String" visibility="package"/>
@@ -564,8 +562,7 @@ void" visibility="private"/>
         <Constructor visibility="public"/>
       </Constructors>
       <Methods>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="cabeceraArticulos" returnType="void" visibility="public"/>
         <Method name="cargarTablaArticulo" returnType="void" visibility="public"/>
         <Method name="limpiarTablaArticulo" returnType="void" visibility="private"/>
@@ -583,7 +580,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="Registro_factura" package="Vista" visibility="public" isFinal="true" xPosition="20.0" yPosition="820.0">
+    <Class name="Registro_factura" package="Vista" visibility="public" isFinal="true" xPosition="20.0" yPosition="934.0">
       <Fields>
         <Field name="m" type="Modelo_cliente" visibility="package"/>
         <Field name="ma" type="Modelo_articulo" visibility="package"/>
@@ -630,8 +627,7 @@ void" visibility="private"/>
         <Constructor visibility="public"/>
       </Constructors>
       <Methods>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="cargarCodigo" returnType="void" visibility="public"/>
         <Method name="cargarFecha" returnType="void" visibility="public"/>
         <Method name="btBuscarActionPerformed" returnType="void" visibility="private">
@@ -656,7 +652,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="Registro_personal" package="Vista" visibility="public" isFinal="true" xPosition="320.0" yPosition="820.0">
+    <Class name="Registro_personal" package="Vista" visibility="public" isFinal="true" xPosition="903.0" yPosition="934.0">
       <Fields>
         <Field name="p" type="Personal_laboral" visibility="package"/>
         <Field name="mp" type="Modelo_personal" visibility="package"/>
@@ -701,8 +697,7 @@ void" visibility="private"/>
         <Method name="cabeceras" returnType="void" visibility="public"/>
         <Method name="llenarTabla" returnType="void" visibility="package"/>
         <Method name="limpiarTabla" returnType="void" visibility="private"/>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="btRegistrarActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -713,42 +708,42 @@ void" visibility="private"/>
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="mp" source="Vista.Registro_factura" target="Modelo.Modelo_personal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="Vista.Registro_factura" target="Controlador.Detalle_factura" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="m" source="Vista.Registro_factura" target="Modelo.Modelo_cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="mp" source="Vista.Registro_personal" target="Modelo.Modelo_personal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="Modelo.Modelo_factura" target="Controlador.Factura" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="Modelo.Modelo_cliente" target="Controlador.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="m" source="Vista.Registro_cliente" target="Modelo.Modelo_cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Controlador.Personal_laboral" target="Controlador.Persona"/>
-    <UseRelation source="Controlador.Factura" target="Controlador.Detalle_factura" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="art" source="Vista.Registro_producto" target="Modelo.Modelo_articulo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="pr" source="Vista.Registrar_proveedor" target="Controlador.Proveedor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="f" source="Vista.Registro_factura" target="Controlador.Factura" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="mf" source="Vista.Registro_factura" target="Modelo.Modelo_factura" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Controlador.Proveedor" target="Controlador.Persona"/>
-    <HasRelation name="c" source="Vista.Registro_cliente" target="Controlador.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="ma" source="Vista.Registro_factura" target="Modelo.Modelo_articulo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="cliente" source="Controlador.Factura" target="Controlador.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="detalleFactura" source="Controlador.Factura" target="Controlador.Detalle_factura" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Detalle_factura&gt;"/>
-    <UseRelation source="Controlador.Detalle_factura" target="Controlador.Articulos" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="mpr" source="Vista.Registrar_proveedor" target="Modelo.Modelo_proveedor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="Controlador.Factura" target="Controlador.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="articulo" source="Controlador.Proveedor" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Articulos&gt;"/>
-    <UseRelation source="Modelo.Modelo_proveedor" target="Controlador.Proveedor" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="art" source="Vista.Registrar_proveedor" target="Modelo.Modelo_articulo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="a" source="Vista.Registro_factura" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="articulos" source="Controlador.Detalle_factura" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="pl" source="Vista.Registro_factura" target="Controlador.Personal_laboral" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Controlador.Cliente" target="Controlador.Persona"/>
     <HasRelation name="personal_laboral" source="Controlador.Factura" target="Controlador.Personal_laboral" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="Modelo.Modelo_personal" target="Controlador.Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="a" source="Vista.Registro_producto" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="p" source="Vista.Registro_personal" target="Controlador.Personal_laboral" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="a" source="Vista.Registrar_proveedor" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="Controlador.Factura" target="Controlador.Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="Modelo.Modelo_articulo" target="Controlador.Articulos" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="c" source="Vista.Registro_factura" target="Controlador.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="c" source="Vista.Registro_cliente" target="Controlador.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cliente" source="Controlador.Factura" target="Controlador.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controlador.Factura" target="Controlador.Detalle_factura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="f" source="Vista.Registro_factura" target="Controlador.Factura" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="detalleFactura" source="Controlador.Factura" target="Controlador.Detalle_factura" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Detalle_factura&gt;"/>
+    <HasRelation name="mp" source="Vista.Registro_personal" target="Modelo.Modelo_personal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="Controlador.Proveedor" target="Controlador.Articulos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mpr" source="Vista.Registrar_proveedor" target="Modelo.Modelo_proveedor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="Vista.Registrar_proveedor" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Modelo.Modelo_proveedor" target="Controlador.Proveedor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Modelo.Modelo_factura" target="Controlador.Factura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mf" source="Vista.Registro_factura" target="Modelo.Modelo_factura" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Controlador.Personal_laboral" target="Controlador.Persona"/>
+    <IsRelation name="is" source="Controlador.Cliente" target="Controlador.Persona"/>
+    <HasRelation name="articulos" source="Controlador.Detalle_factura" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="p" source="Vista.Registro_personal" target="Controlador.Personal_laboral" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="Vista.Registro_factura" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Modelo.Modelo_cliente" target="Controlador.Cliente" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="m" source="Vista.Registro_factura" target="Modelo.Modelo_cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="articulo" source="Controlador.Proveedor" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Articulos&gt;"/>
+    <HasRelation name="c" source="Vista.Registro_factura" target="Controlador.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mp" source="Vista.Registro_factura" target="Modelo.Modelo_personal" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="a" source="Vista.Registro_producto" target="Controlador.Articulos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pl" source="Vista.Registro_factura" target="Controlador.Personal_laboral" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controlador.Detalle_factura" target="Controlador.Articulos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="m" source="Vista.Registro_cliente" target="Modelo.Modelo_cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Modelo.Modelo_personal" target="Controlador.Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Controlador.Proveedor" target="Controlador.Persona"/>
+    <UseRelation source="Controlador.Factura" target="Controlador.Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pr" source="Vista.Registrar_proveedor" target="Controlador.Proveedor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Vista.Registro_factura" target="Controlador.Detalle_factura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="art" source="Vista.Registrar_proveedor" target="Modelo.Modelo_articulo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

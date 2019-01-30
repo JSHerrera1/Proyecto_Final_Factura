@@ -12,7 +12,7 @@ public class Articulos {
 
     protected int existencia;
 
-    protected String estado;
+    protected boolean estado;
 
     protected String tipo;
 
@@ -21,7 +21,7 @@ public class Articulos {
 
     public Articulos(String codigoArticulo, double precioOriginal,
             double precioVenta, String descripcion, int existencia,
-            String estado, String tipo) {
+            boolean estado, String tipo) {
         this.codigoArticulo = codigoArticulo;
         this.precioOriginal = precioOriginal;
         this.precioVenta = precioVenta;
@@ -71,11 +71,11 @@ public class Articulos {
         this.existencia = existencia;
     }
 
-    public String getEstado() {
+    public boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 

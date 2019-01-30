@@ -162,10 +162,6 @@ public final class Registrar_proveedor extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(dateNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel2)
                                             .addComponent(jLabel5)
@@ -182,7 +178,11 @@ public final class Registrar_proveedor extends javax.swing.JFrame {
                                             .addComponent(txtCedula, javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtNombreE, javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtApellido)
-                                            .addComponent(txtCiudad)))))
+                                            .addComponent(txtCiudad)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(dateNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(300, 300, 300)
                                 .addComponent(btRegistrar))
@@ -355,26 +355,26 @@ public final class Registrar_proveedor extends javax.swing.JFrame {
             nacimiento = format.parse(fecha);
             int fila = tbArticulo.getSelectedRow();
             if (fila != -1) {
-                    String codArticulo;
-                    double precioOriginal;
-                    double precioVenta;
-                    String descripcion;
-                    int existencia;
-                    String estado;
-                    String tipo;
-                    /*estas lineas no permiten saber que articulo escojimos en la tabla
+                String codArticulo;
+                double precioOriginal;
+                double precioVenta;
+                String descripcion;
+                int existencia;
+                String estado;
+                String tipo;
+                /*estas lineas no permiten saber que articulo escojimos en la tabla
                     obteniendo los valores de cada columna para crear un articulo y asignarle
                     al proveedor*/
-                    for (int i = fila; i == fila; i++) {
-                        codArticulo = mdlArticulo.getValueAt(i, 0).toString();
-                        precioVenta = Double.parseDouble(mdlArticulo.getValueAt(i, 1).toString());
-                        precioOriginal = Double.parseDouble(mdlArticulo.getValueAt(i, 2).toString());
-                        descripcion = mdlArticulo.getValueAt(i, 3).toString();
-                        existencia = Integer.parseInt(mdlArticulo.getValueAt(i, 4).toString());
-                        estado = mdlArticulo.getValueAt(i, 5).toString();
-                        tipo = mdlArticulo.getValueAt(i, 6).toString();
-                        a = new Articulos(codArticulo, precioOriginal, precioVenta, descripcion, existencia, estado, tipo);
-                    }
+                for (int i = fila; i == fila; i++) {
+                    codArticulo = mdlArticulo.getValueAt(i, 0).toString();
+                    precioVenta = Double.parseDouble(mdlArticulo.getValueAt(i, 1).toString());
+                    precioOriginal = Double.parseDouble(mdlArticulo.getValueAt(i, 2).toString());
+                    descripcion = mdlArticulo.getValueAt(i, 3).toString();
+                    existencia = Integer.parseInt(mdlArticulo.getValueAt(i, 4).toString());
+                    estado = mdlArticulo.getValueAt(i, 5).toString();
+                    tipo = mdlArticulo.getValueAt(i, 6).toString();
+                    a = new Articulos(codArticulo, precioOriginal, precioVenta, descripcion, existencia, estado, tipo);
+                }
             } else {
                 /*mensaje por medio de interfaz al usuario que debe elegir articulo*/
                 JOptionPane.showMessageDialog(null, "Elija Articulo");

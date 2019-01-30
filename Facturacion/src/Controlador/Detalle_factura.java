@@ -1,38 +1,40 @@
 package Controlador;
 
+import java.util.ArrayList;
+
 public class Detalle_factura {
 
-    Articulos articulos;
-    int cantVendida;
+    ArrayList<Articulos> articulos;
+    int cantidad;
 
     public Detalle_factura() {
     }
 
-    public Detalle_factura(Articulos articulos, int cantVendida) {
-        this.articulos = articulos;
-        this.cantVendida = cantVendida;
+    public Detalle_factura(ArrayList<Articulos> articulo, int cantidad) {
+        articulos = articulo;
+        this.cantidad = cantidad;
     }
 
-    public Articulos getArticulos() {
+    public ArrayList<Articulos> getArticulos() {
         return articulos;
     }
 
-    public void setArticulos(Articulos articulos) {
+    public void setArticulos(ArrayList<Articulos> articulos) {
         this.articulos = articulos;
     }
 
-    public int getCantVendida() {
-        return cantVendida;
+    public int getCantidad() {
+        return cantidad;
     }
 
-    public void setCantVendida(int cantVendida) {
-        this.cantVendida = cantVendida;
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 
     @Override
     public String toString() {
-        return "\nDetalle_factura{" + "articulos=" + articulos + ", cantVendida=" + cantVendida + '}';
+        return "\nDetalle_factura{" + "articulos=" + articulos + ", cantidad="
+                + cantidad + '}';
     }
 
-   
 }

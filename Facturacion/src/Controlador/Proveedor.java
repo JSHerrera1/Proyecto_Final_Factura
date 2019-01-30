@@ -5,10 +5,12 @@ import java.util.Date;
 
 public class Proveedor extends Persona {
 
-    ArrayList<Articulos> articulo;//ALMACENAN DETALLES DEL ARTICULO
+    ArrayList<Articulos> articulo;
     protected String nombreEmpresa;
 
-    public Proveedor() {
+    public Proveedor(ArrayList<Articulos> articulos, String nombreEmpresa) {
+        articulo = articulos;
+        this.nombreEmpresa = nombreEmpresa;
     }
 
     public Proveedor(ArrayList<Articulos> articulos, String nombreEmpresa,
